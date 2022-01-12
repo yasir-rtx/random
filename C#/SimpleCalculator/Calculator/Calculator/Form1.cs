@@ -19,7 +19,7 @@ namespace Calculator
 
         public int bil1;
         public int bil2;
-        public int hasil;
+        public double hasil;
 
         private void butttonPlus_Click(object sender, EventArgs e)
         {
@@ -41,7 +41,7 @@ namespace Calculator
 
         private void buttonDivision_Click(object sender, EventArgs e)
         {
-            hasil = bil1 / bil2;
+            hasil = (double)bil1 / (double)bil2;
             txtHasil.Text = hasil.ToString();
         }
 
@@ -53,6 +53,11 @@ namespace Calculator
         private void txtBil2_TextChanged(object sender, EventArgs e)
         {
             bil2 = int.Parse(txtBil2.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

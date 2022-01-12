@@ -39,6 +39,7 @@
             this.buttonSplit = new System.Windows.Forms.Button();
             this.buttonMultiple = new System.Windows.Forms.Button();
             this.buttonDivision = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -140,11 +141,22 @@
             this.buttonDivision.UseVisualStyleBackColor = true;
             this.buttonDivision.Click += new System.EventHandler(this.buttonDivision_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(365, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDivision);
             this.Controls.Add(this.buttonMultiple);
             this.Controls.Add(this.buttonSplit);
@@ -176,6 +188,7 @@
         private System.Windows.Forms.Button buttonSplit;
         private System.Windows.Forms.Button buttonMultiple;
         private System.Windows.Forms.Button buttonDivision;
+        private System.Windows.Forms.Button button1;
     }
 }
 
